@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html manifest="mycache.manifest">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+    <div id="statusDiv"></div>
+    
+    <script>
+      var s;
+      function onlineStatus() {
+        s.innerHTML = "Online.";
+      }
+      function offlineStatus() {
+        s.innerHTML = "Offline.";
+      }
+      onload = function () {
+        s = document.getElementById("statusDiv");
+        if (navigator.onLine) {
+          onlineStatus();
+        } else {
+          offlineStatus();
+        }
+        window.addEventListener("online", onlineStatus, true);
+        window.addEventListener("offline", offlineStatus, true);
+      }
+    </script>
+
+  </body>
+
+</html>

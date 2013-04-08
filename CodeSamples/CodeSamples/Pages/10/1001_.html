@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html manifest="mycache.manifest">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+    <!--media attributes-->
+    <link rel="stylesheet" type="text/css" href="core.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+    <!--media queries-->
+    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-device-width: 480px)" />
+    <style type="text/css">
+      @media print {
+        header, footer { display: none; }
+        /*...*/
+      }
+
+      @media print, projection {
+        header, footer { display: none; }
+        /*...*/
+      }
+
+        /*media queries*/
+
+      @media screen and (max-device-width: 480px) {
+        article { column-count: 1; }
+      }
+
+      @media screen and (max-device-width: 480px) and (resolution: 300dpi) {
+      }
+
+    </style>
+  </head>
+  <body>
+    <p>The place with the longest name in Wales is Llanfair<wbr />pwllgwyngyll<wbr/>gogerychwyrndrobwll<wbr />llantysilio<wbr />gogogoch</p>
+    <!--[if IE 9]>
+      <p>Welcome to Internet Explorer 9.</p>
+    <![endif]-->
+    
+    <!--[if !(IE)]>
+      <p>You are not using Internet Explorer.</p>
+    <![endif]-->
+    
+    <!--[if lt IE 9]>
+      <p>Please upgrade to Internet Explorer 9 or later.</p>
+    <![endif]-->
+
+
+  </body>
+
+</html>

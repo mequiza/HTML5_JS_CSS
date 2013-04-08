@@ -57,6 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\09\0905_online_offline.html" />
+    <Content Include="Pages\10\1001_wbr.html" />
+    <Content Include="review.txt" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Pages\01\0101_doctype.html" />
     <Content Include="Pages\01\0102_forms.html" />
@@ -131,7 +134,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\05\" />
-    <Folder Include="Pages\10\" />
     <Folder Include="Pages\11\" />
     <Folder Include="Pages\12\" />
     <Folder Include="Pages\13\" />

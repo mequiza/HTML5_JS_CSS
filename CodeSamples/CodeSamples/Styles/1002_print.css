@@ -1,0 +1,35 @@
+﻿header, footer, nav { display: none; }
+
+article { background: none; }
+
+.highlight { transform: none; }
+
+article, p, li {
+    color: #222;
+    font-size: 14pt\1 .5;
+    text-shadow: none;
+}
+
+a:after { content: " (" attr(href) ")"; }
+
+abbr:after { content: " (" attr(title) ")"; }
+
+article { column-count: 1; }
+
+#glossary { column-count: 2; }
+
+@page {
+    size: A4;
+    orphans: 3;
+    widows: 3;
+}
+
+@page :left {
+    margin-left: 3cm;
+    margin-right: 4cm;
+}
+
+@page :right {
+    margin-left: 4cm;
+    margin-right: 3cm;
+}

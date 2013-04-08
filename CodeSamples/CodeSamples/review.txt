@@ -1,0 +1,58 @@
+﻿1. What are the four elements that define the basic structure of an HTML page? 
+doctype header body html
+
+2. What is the best way to apply CSS rules to HTML elements that occur in several different pages?
+(   )Option 1: Include all rules for each element in the <style> attribute of the element.
+(   )Option 2: Include the rules for each page in a <style> element in the <head> element.
+(   )Option 3: Write the rules for the whole site in one or more style sheets and reference them by using a <style> element in the <head> element of each page.
+( X )Option 4: Write the rules for the whole site in one or more style sheets and reference them by using a <link> element in the <head> element of each page.
+(   )Option 5: Write the rules for the whole site in one or more style sheets and reference them by using a <stylesheet> element in the <head> element of each page.
+
+3. What are the new elements that HTML5 provides for specifying the semantic meaning of content in a web page?
+header footer article section nav aside optgroup 
+
+4. Which of the following items is NOT a property of the CSS box model?
+(   )Option 1: Margin
+(   )Option 2: Content
+(   )Option 3: Border
+( X )Option 4: Style
+(   )Option 5: Padding
+
+5. All variables in JavaScript are strongly typed, and you must specify the type of a variable when you create it. True or False?
+( X )False
+(   )True
+
+6. What is the purpose of the DOM?
+easily iterate through the structure of your html
+for events
+to alter your model
+
+7. Which jQuery function indicates that the contents for a page have been loaded into the browser?
+(   )Option 1: loaded
+(   )Option 2: available
+(   )Option 3: $
+( X )Option 4: ready
+(   )Option 5: bind
+
+8. If you define a field with an HTML5 input type that is not supported by the user's browser, the field does not appear on the form when the browser displays it. True or False?
+( X )False
+(   )True
+
+9. If you perform validation in the browser, is it necessary to perform the same validation checks in the server code that processes the data, or is this additional processing redundant?
+do it server side!
+
+10. You should always use the input event to validate data that a user enters into a field, in preference to the submit event of the form. True or False? 
+( X )False
+( X )True
+
+11. In the onreadystatechanged event handler for the XMLHttpRequest object, which property should you examine to ensure that data has been returned, and what value should this property contain?
+(   )Option 1: The readyState property should be set to 0.
+(   )Option 2: The responseText property should be set to a non-null value.
+( X )Option 3: The readyState property should be set to 4.
+(   )Option 4: The status property should be set to 200 (HTTP OK).
+(   )Option 5: The HTTPResponse property should be set to 0.
+
+12. If you use the jQuery get() function to retrieve data and you do not specify an error handling function, any failures while retrieving the data will cause your JavaScript code to stop with an unhandled exception. True or False? 
+( X )False
+(   )True
+

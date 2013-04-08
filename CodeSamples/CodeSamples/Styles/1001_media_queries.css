@@ -1,0 +1,32 @@
+﻿/* Start with mobile styles - max width assumed at 480px*/
+article {
+    column-count: 1;
+    font-size: 12px;
+    line-height: 1.6;
+    width: 98%;
+}
+
+@media (max-width: 600px) {
+    .article {
+        font-size: 14px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+    .article {
+        column-count: 2;
+        line-height: 1.5;
+        width: 70%;
+    }
+}
+    /*note min-width here, not max-width*/
+
+@media (min-width: 1200px) {
+    .article {
+        column-count: 3;
+        font-size: 16px;
+        line-height: 1.7;
+        width: 60%;
+    }
+}
