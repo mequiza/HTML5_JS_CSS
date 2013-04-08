@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html manifest="mycache.manifest">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+    
+    <script>
+      applicationCache.addEventListener("error", function () {
+        alert("Error while downloading resources to the application cache");
+      }, true);
+      
+      function appCacheError(e) { alert('error' + e.message); }
+      function checkingEvent() { alert('checking'); }
+      function noUpdateEvent() { alert('noupdate'); }
+      function downloadingEvent() { alert('downloading'); }
+      function progressEvent() { alert('progress'); }
+      function updateReadyEvent() { alert('updateready'); }
+      function cachedEvent() { alert('cached'); }
+
+      if (window.applicationCache) {
+        var appCache = window.applicationCache;
+        appCache.addEventListener('error', appCacheError, false);
+        appCache.addEventListener('checking', checkingEvent, false);
+        appCache.addEventListener('noupdate', noUpdateEvent, false);
+        appCache.addEventListener('downloading', downloadingEvent, false);
+        appCache.addEventListener('progress', progressEvent, false);
+        appCache.addEventListener('updateready', updateReadyEvent, false);
+        appCache.addEventListener('cached', cachedEvent, false);
+      }
+
+      
+    </script>
+
+  </body>
+
+</html>

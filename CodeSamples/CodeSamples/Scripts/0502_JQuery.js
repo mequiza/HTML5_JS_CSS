@@ -65,5 +65,5 @@ request.send(body);
 
 request.setRequestHeader("Content-Type", "application/json");
 
-request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
+request.setRequestHeader("Content-Type",
+    "application/x-www-form-urlencoded");

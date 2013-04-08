@@ -82,6 +82,7 @@
     <Content Include="Pages\06\0604_Shapes.html" />
     <Content Include="Pages\07\0701_JS.html" />
     <Content Include="Pages\08\0802b_drag_drop.html" />
+    <Content Include="Pages\09\0904_Cache.html" />
     <Content Include="Pages\cool_canvas.html" />
     <Content Include="Pages\08\0801_File_API.html" />
     <Content Include="Pages\08\0802_drag_drop.html" />
@@ -90,10 +91,10 @@
     <Content Include="Pages\09\0901_session_storage.html" />
     <Content Include="Pages\09\0902_local_storage.html" />
     <Content Include="Pages\09\0903_indexDB.html" />
-    <Content Include="Pages\09\TODO_0904_Cache.html" />
     <Content Include="Scripts\0104_AlertMe.js" />
     <Content Include="Scripts\0301_script.js" />
     <Content Include="packages.config" />
+    <Content Include="Pages\09\mycache.manifest" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\0306_JQuery_intellisense.js" />
     <Content Include="Scripts\0501_script.js" />
@@ -140,6 +141,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
+  <PropertyGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />

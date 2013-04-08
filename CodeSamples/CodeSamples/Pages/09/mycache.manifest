@@ -1,0 +1,12 @@
+﻿CACHE MANIFEST
+#version=1.2.4
+CACHE:
+0901_session_storage.html
+#verification.js
+#site.css
+#graphics/logo.jpg
+NETWORK:
+#login
+# alternatives paths
+FALLBACK:
+#ajax/account/ noCode.htm
