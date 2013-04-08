@@ -17,3 +17,4 @@ http://lesscss.org/
 http://fmbip.com/litmus/
 http://html5readiness.com/
 http://html5demos.com/
+http://mobile.smashingmagazine.com/2011/07/22/responsive-web-design-techniques-tools-and-design-strategies/

@@ -81,6 +81,7 @@
     <Content Include="Pages\04\0405_Validating_with_JS.html" />
     <Content Include="Pages\06\0604_Shapes.html" />
     <Content Include="Pages\07\0701_JS.html" />
+    <Content Include="Pages\08\0802b_drag_drop.html" />
     <Content Include="Pages\cool_canvas.html" />
     <Content Include="Pages\08\0801_File_API.html" />
     <Content Include="Pages\08\0802_drag_drop.html" />

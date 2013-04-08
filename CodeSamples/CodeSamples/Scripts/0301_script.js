@@ -1,4 +1,4 @@
-﻿//declarnig variables
+﻿//declaring variables
 
 greeting = "Hello";
 
@@ -29,7 +29,8 @@ x = 10 + 10; // x is set to the number 20;
 y = "10" + 10; // y is set to the string "1010";
 z = "Ten" + 10; // x is set to the string "Ten10";
 
-//0, "" (the empty string), undefined, and null all evaluate to false in Boolean operations. Always use
+//0, "" (the empty string), undefined, and null all evaluate to false in Boolean operations. 
+//Always use
 //=== when comparing to any of these values.
 var zero = 0;
 var emptyString = "";
@@ -117,4 +118,9 @@ var listOfAttendees = [
 }
 ];
 
+var result = JSON.stringify(singleAttendee);
 
+var the_object = JSON.parse("{\
+    \"name\": \"Eric Gruber\",\
+    \"currentTrack\": \"1\",\
+}");
