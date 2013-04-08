@@ -58,7 +58,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pages\09\0905_online_offline.html" />
-    <Content Include="Pages\10\1001_wbr.html" />
+    <Content Include="Pages\10\1001_.html" />
+    <Content Include="Pages\10\1002_.html" />
+    <Content Include="Pages\10\1003_printing.html" />
+    <Content Include="Pages\10\1004_zurb.html" />
     <Content Include="review.txt" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Pages\01\0101_doctype.html" />
@@ -106,6 +109,24 @@
     <Content Include="Scripts\0703_script.js" />
     <Content Include="Scripts\0704_extra.js" />
     <Content Include="Scripts\0705_extra.js" />
+    <Content Include="Scripts\zurb\foundation.min.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.alerts.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.clearing.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.cookie.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.dropdown.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.forms.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.joyride.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.magellan.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.orbit.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.placeholder.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.reveal.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.section.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.tooltips.js" />
+    <Content Include="Scripts\zurb\foundation\foundation.topbar.js" />
+    <Content Include="Scripts\zurb\vendor\custom.modernizr.js" />
+    <Content Include="Scripts\zurb\vendor\jquery.js" />
+    <Content Include="Scripts\zurb\vendor\zepto.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -118,6 +139,9 @@
     <Content Include="Styles\0603_pseudo_classes.css" />
     <Content Include="Styles\0604_graphical_effects.css" />
     <Content Include="AllLinks.txt" />
+    <Content Include="Styles\zurb\foundation.css" />
+    <Content Include="Styles\zurb\foundation.min.css" />
+    <Content Include="Styles\zurb\normalize.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
