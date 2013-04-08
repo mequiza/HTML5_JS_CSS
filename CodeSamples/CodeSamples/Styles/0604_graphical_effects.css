@@ -1,0 +1,57 @@
+﻿div.colored {
+    color: yellow;
+    color: #ff0; /* #rgb */
+    color: #ffff00; /* #rrggbb */
+    color: rgb(255, 255, 0);
+    color: rgb(100%, 100%, 0%);
+    color: rgba(255, 255, 0, 0.2); /* mostly transparent yellow */
+    color: rgba(100%, 100%, 0%, 0.8); /* mostly opaque yellow */
+    color: transparent;
+    color: hsl(60, 100%, 50%);
+    color: hsla(60, 100%, 50%, 0.2); /* mostly transparent yellow */
+}
+
+article {
+    background-image: url('bluearrow.png'), url('greenarrow.png');
+    background-repeat: repeat-x, repeat-y;
+}
+
+article.two { background: url('bluearrow.png') repeat-x, url('greenarrow.png') repeat-y; }
+
+html {
+    background: -ms-linear-gradient(30deg, lightblue, green, yellow);
+    background: radial-gradient(position, shape, start-color, [mid-color-list, ] end-color);
+}
+
+html { background: -ms-radial-gradient(top right, ellipse, red, blue); }
+
+div.trans {
+    transform: translate3d(10px, 50px, 10px);
+    transform: scale3d(2, 4, 0.5);
+    transform: rotate(30deg);
+    transform: skew(15deg, 15deg);
+}
+
+/*drawing shapes
+    */
+
+#square {
+    background: blue;
+    height: 200px;
+    width: 200px;
+}
+
+#circle {
+    background: blue;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+#triangle-topleft {
+    border-right: 200px solid transparent;
+    border-top: 200px solid blue;
+    height: 0;
+    width: 0;
+}
+

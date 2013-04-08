@@ -1,0 +1,59 @@
+﻿/* Targets level 1 headings and renders them as large pink text using the Segoe UI font
+*/
+h1 {
+    color: pink;
+    font-family: 'Segoe UI';
+    font-size: 42px;
+}
+/* Targets emphasized text, rendering it as italicized on a yellow background */
+
+em {
+    background-color: yellow; /* Yellow is a good highlight color */
+    font-style: italic;
+}
+
+/*element selector*/
+h2 { font-size: 24px; }
+
+/*class selector*/
+.red { color: red; }
+
+/*id selector*/
+#alert {
+    background-color: red;
+    color: white;
+}
+
+/*Combining selectors*/
+h2.blue {
+color: blue;
+}
+
+h2#toc {
+font-weight: bold;
+}
+
+h2#blue{} /*Returns any <h2> elements with id "blue"*/
+section, h2{} /*Returns any <h2> and any <section> elements*/
+section h2{} /*Returns any <h2> elements nested within a <section> element at any level.*/
+section > h2{} /*Returns any <h2> elements nested immediately under a <section> element*/
+section + h2{} /*Returns any <h2> elements immediately following and sharing the same parent
+                    element as a <section> element*/
+section ~ h2{} /*Returns any <h2> elements following and sharing the same parent element as a
+                    <section> element*/
+
+input[type="text"]{} /*Returns any <input> elements where the type attribute value is exactly
+                        equal to the string "text".*/
+input[foo~="red"] {} /*Returns any <input> elements where the foo attribute (for instance, the
+                        class attribute) contains a space-separated list of values, one of which is
+                        exactly equal to "red".*/
+input[type^="sub"] {} /*Returns any <input> elements where the type attribute value begins
+                        exactly with the string "sub".*/
+input[type$="mit"] {} /*Returns any <input> elements where the type attribute value ends
+                        exactly with the string "mit".*/
+input[type*="ubmi"] {} /*Returns any <input> elements where the type attribute value contains
+                        the substring "ubmi".*/
+input[foo|="en"] {} /*Returns any <input> elements where the foo attribute value is either
+                        exactly "en" or begins exactly with "en-", i.e. the value plus a hyphen.*/
+input[type="checkbox"][selected] {} /*combinations are possible*/
+

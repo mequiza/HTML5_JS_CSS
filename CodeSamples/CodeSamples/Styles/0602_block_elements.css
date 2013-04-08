@@ -1,0 +1,48 @@
+﻿div {
+    border: 2px solid red;
+    outline: 2px solid green;
+    outline-offset: 5px;
+}
+/* The above code can also be written in full as */
+
+div {
+    border-color: red;
+    border-style: solid;
+    border-width: 2px;
+    outline-color: green;
+    outline-offset: 5px;
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+div.presentation {
+    border-radius: 2em; /* circular corners with radius 2em*/
+    border-radius: 5px/10px; /*elliptical corners with radii of 5px high and 10px wide*/
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+div.presentation2 {
+    max-width: 400px;
+    min-width: 60px;
+    overflow: hidden;
+    resize: horizontal;
+}
+
+section {
+    column-count: 3;
+    column-gap: 5rem;
+    column-rule: 1px solid black;
+    text-align: justify;
+}
+
+div.block {
+    display: block;
+    display: inline;
+    display: inline-block;
+    display: table;
+    display: flexbox; /*for a block-level flexbox container*/
+    display: -ms-flexbox;
+    display: inline-flexbox; /*for an inline flexbox container*/
+    display: -ms-inline-flexbox;
+}

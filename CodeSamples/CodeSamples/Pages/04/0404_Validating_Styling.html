@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+    <style type="text/css">
+      input{
+        border: solid 1px #888;
+        }
+
+        input:required
+        {
+          border-color: #f00;
+        }
+
+        /*Better: */
+        /*input{
+        border: solid 1px;
+        }
+        input:invalid {
+        border-color: #f00;
+        }
+        input:valid {
+        border-color: #0f0;
+        }*/
+    </style>
+  </head>
+  <body>
+    <form id="registerForm" method="post"
+          action="registration.aspx">
+      <div id="firstNameField" class="field">
+        <label for="firstName">First name:</label>
+        <input id="firstName" name="firstName"
+               required="required" placeholder="Your first name" />
+        <span style="color:red">*</span>
+      </div>
+      
+    </form>
+
+
+
+  </body>
+
+</html>

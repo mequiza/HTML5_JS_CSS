@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+    <input type="file" id="theTextFile" onchange=" onLoadTextFile() " />
+    <textarea id="theMessageArea" rows="30" cols="40"></textarea>
+    <script type="text/javascript">
+      function onLoadTextFile() {
+        var theFileElem = document.getElementById("theTextFile");
+        // Get the File object selected by the user, and make sure it is a text file.
+        if (theFileElem.files.length != 0 && theFileElem.files[0].type.match(/text.*/)) {
+          // Create a FileReader and handle the onload and onerror events.
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            var theMessageAreaElem = document.getElementById("theMessageArea");
+            theMessageAreaElem.value = e.target.result;
+          };
+          reader.onerror = function(e) {
+            alert("Cannot load text file");
+          };
+          // Read text file (the second parameter is optional - the default encoding is "UTF-8").
+          reader.readAsText(theFileElem.files[0], "ISO-8859-1");
+        } else {
+          alert("Please select a text file");
+        }
+      }
+    </script>
+
+    <p>reading a binary file</p>
+    <input type="file" id="theBinaryFile" onchange=" onLoadBinaryFile() " />
+    <img id="theImage" alt="" src="../../Images/logo.jpg"></img>
+    <script type="text/javascript">
+      function onLoadBinaryFile() {
+        var theFileElem = document.getElementById("theBinaryFile");
+        // Get the File object selected by the user (and make sure it is an image file).
+        if (theFileElem.files.length != 0 && theFileElem.files[0].type.match(/image.*/)) {
+          // Create a FileReader and handle the onload and onerror events.
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            var theImgElem = document.getElementById("theImage");
+            theImgElem.src = e.target.result;
+          };
+          reader.onerror = function(e) {
+            alert("Cannot load binary file");
+          };
+          // Read the binary file.
+          reader.readAsDataURL(theFileElem.files[0]);
+        } else {
+          alert("Please select a binary file");
+        }
+      }
+    </script>
+    
+
+  </body>
+
+</html>

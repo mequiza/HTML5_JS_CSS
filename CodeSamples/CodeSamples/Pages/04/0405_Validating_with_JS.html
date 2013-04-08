@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+    <script type="text/javascript">
+      function checkAge() {
+        // Validate ageInput.value and confirm that the user has specified an age
+        // in the range 18 to 120 inclusive
+        var ageValid = something();
+        if (!ageValid) {
+          ageInput.setCustomValidity("Age is invalid. Please specify a value between 18 and 120");
+        } else {
+          ageInput.setCustomValidity("");
+        }
+      }
+      //...
+      var ageInput = document.getElementById("confirm-age");
+      ageInput.addEventListener("input", checkAge, false);
+      
+      function isAnInteger( text ){
+        return String(text).search(intTestRegex) != -1;
+      }
+      function validateForm() {
+        if (!isAnInteger(document.getElementById('score').value))
+          return false; /* No, it’s not a number! Form validation fails */
+        return true;
+      }
+      
+      function isSignificant( text ){
+        return String(text).search(notWhitespaceTestRegex) != -1;
+      }
+      function validateForm() {
+        if (!isSignificant(document.getElementById('penalties').value))
+          return false; /* No! Form validation fails */
+        return true;
+      }
+      
+      function validateForm() {
+        var textbox = document.getElementById("penalties");
+        if (!isSignificant(textBox.value)) {
+          textbox.className = "validationError";
+          return false; /* No! Form validation fails */
+        }
+        textbox.className = "validatedFine";
+        return true;
+      }
+    </script>
+    
+    <style type="text/css">
+      .validatedFine {
+        border-color: #0f0;
+        }
+        .validationError {
+        border-color: #f00;
+        }
+    </style>
+  </head>
+  <body>
+    <form id="registrationForm" method="post" action="registration.aspx" onsubmit="returnvalidateForm();" >
+      ...
+      <div id="scoreField" class="field" >
+        <label for="score">Score:</label>
+        <input id="score" name="score"
+               type="number" />
+      </div>
+      <div id="penaltiesField" class="field" >
+        <label for="penalties">Penalties:</label>
+        <input id="penalties" name="penalties" type="text" />
+      </div>
+
+
+      <input type="submit" />
+    </form>
+
+
+
+
+  </body>
+
+</html>

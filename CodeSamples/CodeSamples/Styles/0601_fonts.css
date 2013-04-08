@@ -1,0 +1,54 @@
+﻿@font-face {
+    font-family: 'RobotoRegular';
+    src: url('Roboto-Regular-webfont.ttf') format('truetype');
+    font-stretch: normal; /*Default*/
+    font-weight: normal; /*Default*/
+    font-style: normal; /*Default*/
+    unicode-range: U+0-10FFFF; /*Default*/
+}
+
+p {
+    font-family: RobotoRegular, "Segoe UI", Arial;
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('Roboto-Regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('Roboto-Regular-B-webfont.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('Roboto-Regular-I-webfont.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('Roboto-Regular-webfont.eot');
+    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Regular-webfont.woff') format('woff'),
+         url('Roboto-Regular-webfont.ttf') format('truetype'),
+         url('Roboto-Regular-webfont.svg#RobotoRegular') format('svg');
+}
+
+img { 
+    max-height: calc(100vh - 5px);
+    max-width: calc(100vw - 5px);
+}
+
+div {
+    -ms-hyphens: manual;
+    text-indent: 3rem
+                 hyphens:manual;
+    text-shadow: 0 1px 0 #000; /*not supported in Internet Explorer 9 and earlier versions.*/
+    word-spacing: 5px;
+    word-spacing: 2rem;
+    word-wrap: normal;
+}

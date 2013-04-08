@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+    <video src="MyVideo.mp4"></video>
+    
+    <video src="MyVideo.mp4"
+           width="300" height="200"
+           poster="MyPoster.jpg"
+           autoplay="autoplay"
+           muted="muted"
+           controls="controls"
+           loop="loop" >
+    </video>
+    
+    <p>multiple formats</p>
+    <video poster="MyPoster.jpg" autoplay controls>
+      <source src="MyVideos/MyVideo.mp4" type='video/mp4' />
+      <source src="MyVideos/MyVideo.webm" type='video/webm' />
+      <source src="MyVideos/MyVideo.ogv" type='video/ogg' />
+      <!-- You can embed Flash or Silverlight content here, as a fallback -->
+      <!-- You can also display some simple text in case the browser does not support the
+        video tag -->
+      Cannot play video. Download video <a href="MyVideos/MyVideo.webm">here</a>
+    </video>
+    
+    <p>controlling with JS</p>
+    <script>
+      function createVideoElement(nameOfVideoFile) {
+        // Create a video object and set its properties.
+        var newVideo = document.createElement("video");
+        newVideo.src = nameOfVideoFile;
+        newVideo.loop = true;
+        newVideo.autoplay = true;
+        newVideo.controls = true;
+        newVideo.poster = "ImageLoading.png";
+        // Add the video object to an existing element on the web page.
+        var hostElem = document.getElementById("videoDir");
+        hostElem.appendChild(newVideo);
+      }
+      
+      if (aVideo.paused) {
+        alert("Video current time: " + aVideo.currentTime + ", total duration: " +
+        aVideo.duration);
+        aVideo.play();
+      }
+      else {
+        aVideo.pause();
+      }
+      
+
+      aVideo.addEventListener("loadedmetadata", function () {
+        alert("Video duration: " + aVideo.duration);
+      }, false);
+      aVideo.addEventListener("loadeddata", function () {
+        aVideo.play();
+      }, false);
+      aVideo.addEventListener("timeupdate", function () {
+        alert("Video current time: " + aVideo.currentTime);
+      }, false);
+
+    </script>
+    
+    <p> audio</p>
+    <audio src="MyAudio.mp3"></audio>
+    
+
+
+
+  </body>
+
+</html>

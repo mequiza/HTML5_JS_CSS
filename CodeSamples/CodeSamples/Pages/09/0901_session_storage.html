@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+    <script>
+      if (window.sessionStorage) {
+        sessionStorage.setItem("myKey", "some text value");
+        var textFromSession = sessionStorage.getItem("myKey");
+
+        sessionStorage["myKey"] = "some text value";
+        var textFromSession2 = sessionStorage["myKey"];
+        
+        sessionStorage.myKey = "some text value";
+        var textFromSession3 = sessionStorage.myKey;
+        
+        var listDiv = document.getElementById("myList");
+        for (var i = 0; i < sessionStorage.length; i++) {
+          listDiv.innerHTML += "<br />" + sessionStorage.key(i);
+        }
+        
+        sessionStorage.removeItem("myKey");
+        
+        sessionStorage.clear();
+        
+
+      }
+      
+    </script>
+    
+    <div id="myList">
+      
+    </div>
+
+  </body>
+
+</html>

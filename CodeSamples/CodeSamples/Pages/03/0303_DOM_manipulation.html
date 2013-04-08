@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+    <!-- HTML Markup for VenueList -->
+    <ul id="VenueList">
+      <li>Room A</li>
+      <li>Room B</li>
+    </ul>
+
+    
+    <script type="text/javascript"> 
+      // JavaScript code to modify the items in VenueList
+      var list = document.getElementById("VenueList");
+      // Create a new venue
+      var newItem = document.createElement("li");
+      newItem.textContent = "Room C";
+      // Add the new venue to the end of VenueList
+      list.appendChild(newItem);
+    </script>
+  </body>
+
+</html> 

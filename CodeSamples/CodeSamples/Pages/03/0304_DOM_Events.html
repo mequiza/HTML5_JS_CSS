@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+    
+    <img src="../Images/logo.jpg" id="helpIcon" onmouseover="window.alert('Some help text');" />
+    
+    <script type="text/javascript"> 
+      document.images.helpIcon.onmouseover = function() {
+         window.alert('Some help text');
+      };
+      
+      //or with an eventlistener
+      var helpIcon = document.getElementById("helpIcon");
+      // Add an event listener for the mouseover event
+      // by using a named function
+      function ShowHelpText()
+      {
+        window.alert('Some help text');
+      }
+      helpIcon.addEventListener("mouseover", ShowHelpText, false);
+
+      // Alternatively, using an anonymous function
+      helpIcon.addEventListener("mouseover",
+      function () { window.alert('Some help text'); }, false);
+      
+      //removing the listener
+      helpIcon.removeEventListener("mouseover", ShowHelpText, false);
+    </script>
+  </body>
+
+</html> 

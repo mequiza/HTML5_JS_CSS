@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+    <form name="contactForm">
+      <input type="text" name="nameBox" id="nameBoxId" />
+    </form>
+    
+    <script type="text/javascript">
+      //accessing the form
+      var form = document.forms[0]; // forms is a zero-based array
+      var form = document.forms["contactForm"];
+      var form = document.forms.contactForm;
+      var form = document.contactForm;      
+
+      //accessing the textbox
+      var txt = document.forms.contactForm.elements[0];
+      var txt = document.forms.contactForm.elements["nameBox"];
+      var txt = document.forms.contactForm.nameBox;
+      var txt = document.contactForm.nameBox;
+      
+      //or use getElementById
+      var userNameBox = document.getElementById("nameBoxId");
+      var username = userNameBox.value;
+    </script>
+  </body>
+
+</html>

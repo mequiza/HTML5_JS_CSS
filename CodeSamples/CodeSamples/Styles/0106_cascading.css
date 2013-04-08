@@ -1,0 +1,22 @@
+﻿/*this:*/
+body {
+font-family: Candara;
+}
+
+/*is better than this*/
+h1, h2, h3, h4, h5, h6 {
+font-family: Candara;
+}
+p {
+font-family: Candara;
+}
+/*…*/
+
+/*cascading*/
+/*  1. importance   */
+h2 { font-weight : bold !important; }
+
+/*
+    2.specificity
+    3.source order
+    */

@@ -1,0 +1,114 @@
+﻿body {
+    font-family: Arial, Candara, Verdana, sans-serif;
+    font-family: Georgia, Corbel, "Times New Roman", serif;
+    font-family: Consolas, "Courier New", monospaced;
+
+    font-size: 16px;
+    font-size: 150%; /* Font-size of the parent element * 150% */
+    font-size: 1em; /* 1em = base font-size of the page. Usually 16px */
+
+    font-style: italic;
+
+    font-weight: bold;
+    font-weight: normal;
+    font-weight: 800;
+}
+
+p { font: bold 16px/1.5 "Arial"; }
+/* The above is a shorthand for the following rules The default font-style is used. */
+
+p#thesame {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+p#colored {
+    /* The following color values are all equivalent. */
+    color: olive;
+    color: #808000;
+    color: rgb(128, 128, 0);
+        
+    filter: alpha(opacity=60); /* IE8 and earlier */
+    opacity: 0.6;
+}
+
+p#typographic {
+    letter-spacing: 2em;
+    letter-spacing: -3px;
+
+    line-height: 16px;
+    line-height: normal; /* This is the default */
+    line-height: 1.2;
+    line-height: 120%;
+
+    text-align: left;
+
+    text-decoration: underline;
+
+    text-transform: lowercase;
+}
+
+/*the box model*/
+
+h2.highlight {
+    border: 2px dotted blue;
+    height: 100px;
+    margin: 25px 0 25px 0; /* Could also be written 25px 0 */
+    padding: 10px;
+    width: 500px;
+}
+
+h2.highlight2 {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+h2.highlight3 {
+    border-color: blue;
+    border-style: dotted;
+    border-width: 2px;
+}
+
+p.example {
+    border-bottom: solid 1px black;
+    border-left-style: dotted;
+    border-left-width: 2px;
+    padding: 10px;
+}
+
+/*backgrounds*/
+
+p#bg {
+    background-color: green;
+    background-color: #00FF00;
+    background-image: url('../images/logo.jpg');
+    background-position: left top; /* Image locked into top left corner of element */
+    background-position: 100% 100%; /* Image locked into bottom right corner of element */
+    
+    -moz-background-size: 40px 60px;
+    -o-background-size: 40px 60px;
+    -webkit-background-size: 40px 60px;
+    background-size: 40px 60px; /* 40px wide, 60px high */
+    
+    -moz-background-origin: border-box;
+    -webkit-background-origin: border-box;
+    background-origin: border-box;
+
+    background-repeat : repeat-x; /* Repeat background image only horizontally */
+    background-repeat : no-repeat; /* Don't repeat the image */
+
+    background-attachment : fixed;
+}
+
+article { background: transparent repeat-x url('fluffycat.jpg'); }
+/* The above is a shorthand for the following rules */
+
+article#other {
+    background-color: transparent;
+    background-image: url('../Images/logo.jpg');
+    background-repeat: repeat-x;
+}

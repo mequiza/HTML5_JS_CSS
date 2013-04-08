@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+    <script>
+      navigator.geolocation.getCurrentPosition(myPositionCallbackFunction,
+        myPositionErrorCallbackFunction,
+        { enableHighAccuracy: true, timeout: 5000 });
+
+      var watchID = navigator.geolocation.watchPosition(myPositionCallbackFunction, myPositionErrorCallbackFunction,
+        { enableHighAccuracy: true, maximumAge: 10000 });
+
+      navigator.geolocation.clearWatch(watchID);
+
+      function myPositionCallbackFunction(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        var accuracy = position.coords.accuracy;
+        var heading = position.coords.heading;
+        var speed = position.coords.speed;
+        var altitude = position.coords.altitude;
+        var altitudeAccuracy = position.coords.altitudeAccuracy;
+        // Add code here, to process the information.
+      };
+      
+      function myPositionErrorCallbackFunction(error) {
+        var errorMessage = error.message;
+        var errorCode = error.code;
+        // Add code here, to process the information.
+      };
+      
+
+
+
+    </script>
+
+  </body>
+
+</html>

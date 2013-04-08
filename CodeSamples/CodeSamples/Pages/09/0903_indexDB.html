@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+    <script>
+      var db; // Reference to the database to use
+      var openRequest = indexedDB.open("contosoDB");
+      openRequest.onsuccess = function (event) {
+        db = event.target.result;
+      };
+      openRequest.onerror = function (event) {
+        alert("Error " + event.target.errorCode + " occurred while opening the database");
+      };
+      
+      var attendee = {
+        id: "1",
+        name: "Rachel Valdez",
+        password: "Pa$$w0rd"
+      };
+      var attendeeStore = db.createObjectStore("attendees", { keyPath: "id" });
+      
+      var newAttendee = {
+        id: "2",
+        name: "Eric Gruber",
+        password: "Pa$$w0rd"
+      };
+      var addRequest = attendeeStore.add(newAttendee);
+      addRequest.onsuccess = function(event) {
+        // Attendee was successfully added
+      };
+      addRequest.onerror = function (event) {
+        // Handle failure
+      };
+      
+      var updatedAttendee = {
+        id: "2", // Id of existing attendee
+        name: "Eric Gruber",
+        password: "P@ssw0rd" // Change the password
+      };
+      var updateRequest = attendeeStore.put(updatedAttendee);
+      updateRequest.onsuccess = function(event) {
+        // Attendee was successfully updated
+      };
+      updateRequest.onerror = function (event) {
+        // Handle failure
+      };
+      
+      var deleteRequest = attendeeStore.delete("1"); // Remove the details for Rachel Valdez
+      deleteRequest.onsuccess = function(event) {
+        // Attendee was successfully deleted
+      };
+      deleteRequest.onerror = function (event) {
+        // Handle failure
+      };
+      
+      var attendee;
+      var getRequest = attendeeStore.get("2"); // Retrieve the details for Eric Gruber
+      getRequest.onsuccess = function(event) {
+        // Attendee details are available in event.target.result
+        attendee = event.target.result;
+      };
+      getRequest.onerror = function () {
+        // Handle failure
+      };
+      
+    </script>
+
+  </body>
+
+</html>

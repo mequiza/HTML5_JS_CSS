@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery Example</title>
+    <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    …
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("h2").each(function () {
+          this.style.color = "red";
+        });
+        
+        $("p").eq(7).css("color", "red");
+        
+        $("p").filter($(":first"));
+        
+        $("form").find("input[type=text]");
+        
+        $("nav > ol > li").first();
+        
+        $("nav").next();
+        
+        $("p").size();
+        
+        $("p").slice(4);
+        
+        $("p").addClass("strike");
+        
+        $("ul").append("<li>The new last list item</li>");
+        
+        $("#Warning").detach();
+        
+        $("h1").html("<hgroup><h1>New Heading</h1></hgroup>");
+        
+        $("#Warning").replaceWith("<p>Panic Over!</p>");
+        
+        $("input[type=text]").val();
+        
+
+      });
+</script>
+  </body>
+</html>
