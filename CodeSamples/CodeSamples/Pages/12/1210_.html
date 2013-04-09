@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+    <style>
+      @-moz-keyframes ballmovement {
+        0% {
+             left: 0px;
+             top: 0px;
+             background-color: yellow;
+           }
+
+        33% {
+              left: 100px;
+              top: 160px;
+            }
+
+        66% {
+              left: 200px;
+              top: 0px;
+            }
+
+        100% {
+               left: 300px;
+               top: 160px;
+               background-color: purple;
+             }
+      }
+
+      @-webkit-keyframes ballmovement {
+        0% {
+             left: 0px;
+             top: 0px;
+             background-color: yellow;
+           }
+
+        33% {
+              left: 100px;
+              top: 160px;
+            }
+
+        66% {
+              left: 200px;
+              top: 0px;
+            }
+
+        100% {
+               left: 300px;
+               top: 160px;
+               background-color: purple;
+             }
+      }
+
+      @keyframes ballmovement {
+        0% {
+             left: 0px;
+             top: 0px;
+             background-color: yellow;
+           }
+
+        33% {
+              left: 100px;
+              top: 160px;
+            }
+
+        66% {
+              left: 200px;
+              top: 0px;
+            }
+
+        100% {
+               left: 300px;
+               top: 160px;
+               background-color: purple;
+             }
+      }
+
+      #ball.animate {
+        -moz-animation-name: ballmovement;
+        -o-animation-name: ballmovement;
+        -webkit-animation-name: ballmovement;
+        animation-name: ballmovement;
+        -moz-animation-duration: 10s;
+        -o-animation-duration: 10s;
+        -webkit-animation-duration: 10s;
+        animation-duration: 10s;
+        -moz-animation-delay: 3s;
+        -o-animation-delay: 3s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -moz-animation-timing-function: linear;
+        -o-animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -moz-animation-iteration-count: 2;
+        -o-animation-iteration-count: 2;
+        -webkit-animation-iteration-count: 2;
+        animation-iteration-count: 2;
+        -moz-animation-direction: alternate;
+        -o-animation-direction: alternate;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+      }
+
+      div {
+        background: red;
+        width: 100px;
+      }
+
+
+    </style>
+    <script>
+      function startAnimation() {
+        var ball = document.getElementById("ball");
+        ball.classList.add("animate");
+      }
+    </script>
+
+
+  </head>
+  <body>
+    <div id="ball">some content</div>
+    <button id="button" onclick="startAnimation();">Start Animation</button>
+
+  </body> 
+
+</html>

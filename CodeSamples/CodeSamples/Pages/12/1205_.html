@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+    <script>
+      function onLoad() {
+        var divElements = document.querySelectorAll("div");
+        for (var i = 0; i < divElements.length; i++) {
+          divElements[i].addEventListener("transitionend", onTransitionend, true);
+        }
+      }
+      var messagesElement = document.querySelector("messages");
+      function onTransitionend(e) {
+        messages.add(new Option(e.propertyName + ", elapsedTime " + e.elapsedTime));
+      }
+    </script>
+
+  </head>
+  <body onload="onLoad()">
+    <style>
+      div {
+        background-color: yellow;
+        height: 60px;
+        transition: width 2s, height 2s, font-size 2s, background-color 3750ms;
+        width: 400px;
+      }
+
+      div:hover {
+        background-color: red;
+        font-size: large;
+        height: 80px;
+        width: 600px;
+      }
+    </style>
+
+    <div>Text appearing in a div</div>
+
+    <div>More text appearing in a div</div>
+
+    <select id="messages"></select>
+
+
+  </body> 
+
+</html>

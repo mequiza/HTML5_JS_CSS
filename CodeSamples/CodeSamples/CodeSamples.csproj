@@ -69,6 +69,17 @@
     <Content Include="Pages\11\1105_svg_canvas.html" />
     <Content Include="Pages\11\1106_svg_canvas2.html" />
     <Content Include="Pages\11\1107_svg_canvas344.html" />
+    <Content Include="Pages\12\1201_.html" />
+    <Content Include="Pages\12\1202_.html" />
+    <Content Include="Pages\12\1203_.html" />
+    <Content Include="Pages\12\1204_.html" />
+    <Content Include="Pages\12\1205_.html" />
+    <Content Include="Pages\12\1206_.html" />
+    <Content Include="Pages\12\1207_.html" />
+    <Content Include="Pages\12\1208_.html" />
+    <Content Include="Pages\12\1209_.html" />
+    <Content Include="Pages\12\1210_.html" />
+    <Content Include="Pages\13\1301_.html" />
     <Content Include="review.txt" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Pages\01\0101_doctype.html" />
@@ -165,8 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\05\" />
-    <Folder Include="Pages\12\" />
-    <Folder Include="Pages\13\" />
     <Folder Include="Pages\14\" />
   </ItemGroup>
   <PropertyGroup>
