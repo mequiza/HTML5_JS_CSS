@@ -5,7 +5,7 @@ var add = function (a, b) {
 };
 
 //invocation: 4 patterns
-//method invacation
+//method invocation
 // Create myObject. It has a value and an increment
 // method. The increment method takes an optional
 // parameter. If the argument is not a number, then 1
@@ -86,6 +86,10 @@ document.writeln(sum(4, 8, 15, 16, 23, 42)); // 108
 Function.prototype.method = function (name, func) {
     this.prototype[name] = func;
     return this;
+};
+
+Number.prototype.integer = function() {
+    return Math[this < 0 ? 'ceil' : 'floor'](this);
 };
 
 Number.method('integer', function () {

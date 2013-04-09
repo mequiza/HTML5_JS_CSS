@@ -96,12 +96,12 @@
           };
 
           if (tests.progress) {
-            xhr.upload.onprogress = function (event) {
+            xhr.upload.onprogress = function(event) {
               if (event.lengthComputable) {
                 var complete = (event.loaded / event.total * 100 | 0);
                 progress.value = progress.innerHTML = complete;
               }
-            }
+            };
           }
 
           xhr.send(formData);
@@ -111,11 +111,11 @@
       if (tests.dnd) {
         holder.ondragover = function () { this.className = 'hover'; return false; };
         holder.ondragend = function () { this.className = ''; return false; };
-        holder.ondrop = function (e) {
+        holder.ondrop = function(e) {
           this.className = '';
           e.preventDefault();
           readfiles(e.dataTransfer.files);
-        }
+        };
       } else {
         fileupload.className = 'hidden';
         fileupload.querySelector('input').onchange = function () {

@@ -45,8 +45,8 @@ img {
 
 div {
     -ms-hyphens: manual;
-    text-indent: 3rem
-                 hyphens:manual;
+    hyphens:manual;
+    text-indent: 3rem;
     text-shadow: 0 1px 0 #000; /*not supported in Internet Explorer 9 and earlier versions.*/
     word-spacing: 5px;
     word-spacing: 2rem;

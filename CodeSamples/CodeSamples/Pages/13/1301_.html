@@ -6,7 +6,51 @@
   </head>
   <body>
 
+    <script>
+      if (window.WebSocket) {
 
+        alert("WebSocket is supported");
+
+        var socket = new WebSocket('ws://websocketserver.contoso.com/bookings');
+        var socket = new WebSocket("ws://localhost:55981/bookings");
+        var socket = new WebSocket('wss://secure.websocketserver.contoso.com/bookings');
+
+        socket.onopen = function () {
+          // Web Socket Server is connected
+          alert("Connection to server now open!");
+          //send message etc ...
+        };
+        
+        //OR
+        function sendMessage() {
+          // Create a message and send it to the server
+          //...
+        };
+        socket.addEventListener("open", sendMessage);
+        
+        socket.onerror = function (event) {
+          // An error has occurred
+          alert("An error has occurred: " + event.data);
+        };
+        
+        socket.onclose = function (event) {
+          // Connection has been closed
+          if (event.wasClean) {
+            alert("Connection closed OK");
+          } else {
+            alert("Connection closed with issues. Code " + event.code);
+          }
+        };
+
+        socket.close();
+        socket.close(1000, "No Error. All communication finished with.");
+
+      } else {
+        alert("WebSocket is not supported");
+      }
+      
+
+    </script>
   </body> 
 
 </html>

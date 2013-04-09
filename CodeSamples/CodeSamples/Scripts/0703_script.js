@@ -29,6 +29,7 @@ Person.prototype =
         return this.getName() + " is " + this.getAge();
     }
 };
+
 // External code.
 var person1 = new Person("Joe", 21);
 alert(person1.toString()); // Displays "Joe is 21"

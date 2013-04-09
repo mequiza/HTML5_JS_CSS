@@ -1,6 +1,12 @@
-﻿//immediately nvoked functions
+﻿function add(a, b) {
+    return a + b;
+}
 
-(function () {
+add(4, 5);
+
+//immediately invoked functions
+
+var result = (function () {
     // Variables defined inside the function disappear when the function finishes
     // - they will not conflict with variables defined by other scripts
     var localVar = 5 ;
@@ -18,6 +24,13 @@
 
 
 //namespaces
+var MySecondNamespace = {};
+
+MySecondNamespace.message = "yada";
+MySecondNamespace.AFunction = function() {
+
+};
+
 var MyNamespace = {
     myFunction1: function(someParameters) {
         // Implementation code…
@@ -42,6 +55,7 @@ function someFunction() {
 function someFunction() {
     "use strict";
     // Other statements.
+    count = 0;
 }
 
 //singletons
@@ -138,6 +152,9 @@ acc1.displayDetails();
 acc2.withdraw(50);
 acc2.displayDetails();
 
+Account.prototype.Something = function() {
+    return "something";
+};
 
 //object.create
 //Object.create(prototypeObject, propertiesObject)
