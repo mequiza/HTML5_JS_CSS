@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0.2" stop-color="yellow" />
+        <stop offset="0.5" stop-color="green" />
+        <stop offset="1.0" stop-color="red" />
+      </linearGradient>
+    </svg>
+    
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <radialGradient id="gradient2" fx="0.3" fy="0.3">
+        <stop offset="0.1" stop-color="yellow" />
+        <stop offset="0.7" stop-color="red" />
+      </radialGradient>
+    </svg>
+    
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <pattern patternUnits="userSpaceOnUse" width="100" height="100">
+        <image xlink:href="../../Images/logo.jpg" x="0" y="0" width="100" height="100" />
+      </pattern>
+    </svg>
+    
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <!-- Define some gradients and patterns, for use later -->
+      <defs>
+        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0.2" stop-color="yellow" />
+          <stop offset="0.5" stop-color="green" />
+          <stop offset="1.0" stop-color="red" />
+        </linearGradient>
+        <radialGradient id="RadialGradient2" fx="0.3" fy="0.3">
+          <stop offset="0.1" stop-color="yellow" />
+          <stop offset="0.7" stop-color="red" />
+        </radialGradient>
+
+        <pattern id="wales" patternUnits="userSpaceOnUse" width="100" height="100">
+          <image xlink:href="../../Images/logo.jpg" x="0" y="0" width="100" height="100" />
+        </pattern>
+      </defs>
+
+      <!-- Draw shapes that make use of the gradients and patterns -->
+      <polygon points="50,50 250,50 150,200" fill="url(#gradient1)" />
+      <ellipse cx="150" cy="50" rx="100" ry="20" fill="url(#wales)" />
+      <circle cx="150" cy="250" r="50" fill="url(#RadialGradient2)" />
+    </svg>
+
+    
+
+  </body> 
+
+</html>

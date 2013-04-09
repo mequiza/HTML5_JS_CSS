@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" id="transformations" >
+      <defs>
+        <pattern id="checkerPattern" width="80" height="80"
+                 patternUnits="userSpaceOnUse">
+          <rect fill="red" x="0" y="0" width="40" height="40" />
+          <rect fill="blue" x="40" y="0" width="40" height="40" />
+          <rect fill="blue" x="0" y="40" width="40" height="40" />
+          <rect fill="red" x="40" y="40" width="40" height="40" />
+        </pattern>
+      </defs>
+      <rect x="0" y="0" width="200" height="200" fill="url(#checkerPattern)"
+            stroke="orange" stroke-width="5" />
+      <g transform="translate(200, 200)">
+        <g transform="scale(0.5)">
+          <g transform="rotate(20, 160, 160)">
+            <rect x="0" y="0" width="200" height="200" fill="url(#checkerPattern)"
+                  stroke="orange" stroke-width="5" />
+          </g>
+        </g>
+      </g>
+    </svg>
+    
+
+  </body> 
+
+</html>
