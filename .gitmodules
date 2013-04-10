@@ -1,0 +1,3 @@
+[submodule "CodeSamples/CodeSamples/Scripts/lib"]
+	path = CodeSamples/CodeSamples/Scripts/lib
+	url = http://github.com/miksago/node-websocket-server.git
