@@ -4,7 +4,7 @@ var sys = require("sys")
   , fs = require("fs")
   , path = require("path")
   , http = require("http")
-  , ws = require(__dirname + '/node-websocket-server/lib/ws');
+  , ws = require(__dirname + '\\node-websocket-server\\lib\\ws');
 
 /*-----------------------------------------------
   logging:
