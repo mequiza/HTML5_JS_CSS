@@ -2,3 +2,6 @@
 	path = websocket
 	url = https://github.com/miksago/node-websocket-server.git
 	ignore = dirty
+[submodule "bootstrap_start"]
+	path = bootstrap_start
+	url = https://github.com/michelgrootjans/bootstrap_workshop.git
