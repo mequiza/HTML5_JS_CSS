@@ -1,3 +1,4 @@
 [submodule "websocket"]
 	path = websocket
 	url = https://github.com/miksago/node-websocket-server.git
+	ignore = dirty
