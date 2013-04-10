@@ -57,6 +57,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ModernizrStuff\0105_style.css" />
+    <Content Include="ModernizrStuff\logo-150x150.png" />
+    <Content Include="ModernizrStuff\modernizr.custom.81885.js" />
+    <Content Include="ModernizrStuff\SomeModernizrStuff.html" />
+    <Content Include="ModernizrStuff\techdays-logo.png" />
     <Content Include="Pages\09\0905_online_offline.html" />
     <Content Include="Pages\09\IndexDb.html" />
     <Content Include="Pages\09\IndexDb.js" />

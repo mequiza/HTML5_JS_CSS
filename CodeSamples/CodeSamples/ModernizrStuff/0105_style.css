@@ -1,0 +1,48 @@
+﻿/* Targets level 1 headings and renders them as large pink text using the Segoe UI font
+*/
+h1 {
+    color: pink;
+    font-family: 'Segoe UI';
+    font-size: 42px;
+}
+/* Targets emphasized text, rendering it as italicized on a yellow background */
+
+em {
+    background-color: yellow; /* Yellow is a good highlight color */
+    font-style: italic;
+}
+
+/*element selector*/
+h2 { font-size: 24px; }
+
+/*class selector*/
+.red { color: red; }
+
+/*id selector*/
+#alert {
+    background-color: red;
+    color: white;
+}
+
+/*Combining selectors*/
+h2.blue {
+color: blue;
+}
+
+h2#toc {
+font-weight: bold;
+}
+
+#nice {
+    background: url(logo-150x150.png) top left repeat-x,
+    url(techdays-logo.png) bottom left repeat-x;
+}
+
+/*modernizr stuff*/
+.rgba div {
+    /* Do things with CSS for browsers that support RGBa colors */
+}
+ 
+.no-rgba div {
+    /* Do things with CSS for browsers that DO NOT support RGBa colors */
+}
