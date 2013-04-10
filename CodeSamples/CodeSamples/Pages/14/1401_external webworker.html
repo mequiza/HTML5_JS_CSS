@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+
+    <script>
+      var webWorker;
+      if (typeof (Worker) !== "undefined") {
+        webWorker = new Worker("processScript.js");
+        
+        webWorker.terminate();
+      }
+      
+
+    </script>
+  </body> 
+
+</html>

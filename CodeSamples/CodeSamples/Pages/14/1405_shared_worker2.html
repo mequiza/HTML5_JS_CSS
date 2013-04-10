@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var webWorker;
+      webWorker = new SharedWorker("processScript3.js"); // The web worker code is in this file
+      webWorker.port.addEventListener("message", replyHandler, false);
+      webWorker.port.addEventListener("error", errorHandler, false);
+      webWorker.port.start();
+      
+      webWorker.port.postMessage("Here is some data");
+      
+      function replyHandler(event) {
+        alert("Reply: " + event.data); // Display the reply in an alert
+      }
+      
+      function errorHandler(event) {
+        console.log(event.message);
+      }
+    </script>
+  </body> 
+
+</html>

@@ -86,6 +86,15 @@
     <Content Include="Pages\13\1301_.html" />
     <Content Include="Pages\13\1302_.html" />
     <Content Include="Pages\13\websocket_demo.html" />
+    <Content Include="Pages\14\1402_internal_webworker.html" />
+    <Content Include="Pages\14\1403_internal_webworker.html" />
+    <Content Include="Pages\14\1404_webworker_messaging.html" />
+    <Content Include="Pages\14\1405_shared_worker.html" />
+    <Content Include="Pages\14\1405_shared_worker2.html" />
+    <Content Include="Pages\14\processScript3.js" />
+    <Content Include="Pages\14\processScript2.js" />
+    <Content Include="Pages\14\processScript.js" />
+    <Content Include="Pages\14\1401_external webworker.html" />
     <Content Include="review.txt" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Pages\01\0101_doctype.html" />
@@ -183,7 +192,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\05\" />
-    <Folder Include="Pages\14\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
