@@ -57,6 +57,23 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootstrapStuff\css\bootstrap-responsive.min.css" />
+    <Content Include="bootstrapStuff\css\bootstrap.min.css" />
+    <Content Include="bootstrapStuff\exercises\dialog.html" />
+    <Content Include="bootstrapStuff\exercises\fixed_grid.html" />
+    <Content Include="bootstrapStuff\exercises\fluid_grid.html" />
+    <Content Include="bootstrapStuff\exercises\form.html" />
+    <Content Include="bootstrapStuff\exercises\menu.html" />
+    <Content Include="bootstrapStuff\exercises\responsive_form.html" />
+    <Content Include="bootstrapStuff\exercises\responsive_grid.html" />
+    <Content Include="bootstrapStuff\exercises\responsive_menu.html" />
+    <Content Include="bootstrapStuff\exercises\simple_components.html" />
+    <Content Include="bootstrapStuff\exercises\table.html" />
+    <Content Include="bootstrapStuff\exercises\visibility.html" />
+    <Content Include="bootstrapStuff\img\glyphicons-halflings-white.png" />
+    <Content Include="bootstrapStuff\img\glyphicons-halflings.png" />
+    <Content Include="bootstrapStuff\js\bootstrap.min.js" />
+    <Content Include="bootstrapStuff\js\jquery.min.js" />
     <Content Include="ModernizrStuff\0105_style.css" />
     <Content Include="ModernizrStuff\logo-150x150.png" />
     <Content Include="ModernizrStuff\modernizr.custom.81885.js" />
