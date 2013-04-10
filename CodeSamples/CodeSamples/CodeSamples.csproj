@@ -58,10 +58,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pages\09\0905_online_offline.html" />
+    <Content Include="Pages\09\IndexDb.html" />
+    <Content Include="Pages\09\IndexDb.js" />
+    <Content Include="Pages\09\indexstyle.css" />
     <Content Include="Pages\10\1001_.html" />
     <Content Include="Pages\10\1002_.html" />
     <Content Include="Pages\10\1003_printing.html" />
     <Content Include="Pages\10\1004_zurb.html" />
+    <Content Include="Pages\10\1001b_.html" />
     <Content Include="Pages\11\1101_svg.html" />
     <Content Include="Pages\11\1102_svg_gradients.html" />
     <Content Include="Pages\11\1103_svg_text.html" />
@@ -80,6 +84,8 @@
     <Content Include="Pages\12\1209_.html" />
     <Content Include="Pages\12\1210_.html" />
     <Content Include="Pages\13\1301_.html" />
+    <Content Include="Pages\13\1302_.html" />
+    <Content Include="Pages\13\websocket_demo.html" />
     <Content Include="review.txt" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Pages\01\0101_doctype.html" />
@@ -127,6 +133,7 @@
     <Content Include="Scripts\0703_script.js" />
     <Content Include="Scripts\0704_extra.js" />
     <Content Include="Scripts\0705_extra.js" />
+    <Content Include="Scripts\myNodeServer.js" />
     <Content Include="Scripts\zurb\foundation.min.js" />
     <Content Include="Scripts\zurb\foundation\foundation.alerts.js" />
     <Content Include="Scripts\zurb\foundation\foundation.clearing.js" />

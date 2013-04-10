@@ -1,0 +1,75 @@
+﻿body {
+    font-family: Sans-Serif;
+    font-size: 0.8em;
+}
+
+form {
+    background-color: #cccccc;
+    border-radius: 0.3em;
+    display: inline-block;
+    margin-bottom: 0.5em;
+    padding: 1em;
+}
+
+table { border-collapse: collapse; }
+
+input {
+    border-color: #cccccc;
+    border-radius: 0.3em;
+    padding: 0.3em;
+}
+
+.required:after {
+    color: red;
+    content: "*";
+}
+
+.button-pane { margin-top: 1em; }
+
+#pub-viewer {
+    border: solid #d092ff 0.1em;
+    float: right;
+    height: 20em;
+    width: 48%;
+}
+
+#pub-viewer iframe {
+    height: 100%;
+    width: 100%;
+}
+
+#pub-list {
+    background-color: #eeeeee;
+    border-radius: 0.3em;
+    width: 46%;
+}
+
+#pub-list li {
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+}
+
+#msg { margin-bottom: 1em; }
+
+.action-success {
+    background-color: #eeeeee;
+    border-radius: 0.2em;
+    color: #00d21e;
+    padding: 0.5em;
+}
+
+.action-failure {
+    background-color: #eeeeee;
+    border-radius: 0.2em;
+    color: #ff1408;
+    padding: 0.5em;
+}
+
+.note { font-size: smaller; }
+
+.destructive { background-color: orange; }
+
+.destructive:hover { background-color: #ff8000; }
+
+.destructive:active { background-color: red; }

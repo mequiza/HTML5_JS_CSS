@@ -15,7 +15,8 @@
       function offlineStatus() {
         s.innerHTML = "Offline.";
       }
-      onload = function () {
+
+      onload2 = function() {
         s = document.getElementById("statusDiv");
         if (navigator.onLine) {
           onlineStatus();
@@ -24,7 +25,7 @@
         }
         window.addEventListener("online", onlineStatus, true);
         window.addEventListener("offline", offlineStatus, true);
-      }
+      };
     </script>
 
   </body>

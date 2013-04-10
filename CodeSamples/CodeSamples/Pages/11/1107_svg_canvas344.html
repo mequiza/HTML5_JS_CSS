@@ -15,15 +15,15 @@
     <h1>Getting started with canvas</h1>
 
     <canvas id="myCanvas">No canvas support in this browser</canvas>
-    <img id="wales" src="../../Images/logo.jpg" style="display: none;" />
+    <img id="wales" src="../../Images/logo.jpg" width="10px" height="10px" style="display: none;" />
 
     <script>
       // Get the canvas element and its drawing context.
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
       context.lineWidth = 5;
-      demoLinearGradient();
-      demoRadialGradient();
+      //demoLinearGradient();
+      //demoRadialGradient();
       demoPattern();
       function demoLinearGradient()
       {

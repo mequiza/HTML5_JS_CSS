@@ -4,7 +4,7 @@ var sys = require("sys")
   , fs = require("fs")
   , path = require("path")
   , http = require("http")
-  , ws = require(__dirname + '\\node-websocket-server\\lib\\ws');
+  , ws = require("..\\..\\..\\websocket\\lib\\ws\\server.js");
 
 /*-----------------------------------------------
   logging:
@@ -67,7 +67,7 @@ var server = ws.createServer({
 }, httpServer);
 
 server.addListener("listening", function () {
-    log("Listening for connections on " + process.ARGV[2]);
+    log("Listening for connections on 8000");
 });
 
 // Handle WebSocket Requests
@@ -90,7 +90,7 @@ server.addListener("close", function (conn) {
     conn.broadcast(connected + '');
 });
 
-server.listen(parseInt(process.ARGV[2]) || 8000);
+server.listen(8000);
 // Handle HTTP Requests:
 
 // This will hijack the http server, if the httpserver doesn't 

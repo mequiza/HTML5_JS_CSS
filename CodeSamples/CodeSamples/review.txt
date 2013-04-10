@@ -56,3 +56,40 @@ do it server side!
 ( X )False
 (   )True
 
+13. Which CSS rule can you use to download a font required by a web page?
+(   )Option 1: @font-family
+(   )Option 2: @font-style
+(   )Option 3: @font-face
+(   )Option 4: @font
+(   )Option 5: You cannot download fonts by using CSS.
+
+14. What are the main differences between the CSS box model, flex-box, and multi-column layout?
+
+
+15. How do you select the first item in a list so that you can apply styling to it?
+
+16. How can you guard against name clashes in JavaScript?
+
+17. If you modify the prototype object for a constructor function, the changes are only visible to new objects that you create by using that constructor function; existing objects created by using the constructor function will be unaffected. True or False?
+(   )False
+(   )True
+
+18. Which of the following statements is true?
+(   )Option 1: JavaScript uses the public, private, and protected keywords to implement encapsulation.
+(   )Option 2: JavaScript does not support encapsulation.
+(   )Option 3: JavaScript uses closures to achieve encapsulation.
+(   )Option 4: JavaScript uses prototype chaining to achieve encapsulation.
+(   )Option 5: JavaScript uses the Object.create() function to implement encapsulation
+
+19. What methods are provided by the FileReader interface for reading files on the local file system?
+
+20. HTML5 browsers are guaranteed to support the .mp4 video format. True or false?
+(   )False
+(   )True
+
+21. What methods are provided by the navigator.geolocation object for obtaining geolocation information?
+
+22. The F12 Developer Tools require that you have Visual Studio installed on your computer before you can use them to debug JavaScript code. True or False?
+(   )False
+(   )True
+

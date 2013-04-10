@@ -6,7 +6,18 @@
   </head>
   <body>
     <script>
-      if( window.localStorage ){
+      function myStorageCallback(e) {
+        alert("Key:" + e.key + " changed to "
+        + e.newValue);
+      }
+      window.addEventListener("storage", myStorageCallback, true);
+
+      function myStorageCommitCallback(e) {
+        alert("Data written to disk");
+      }
+      window.addEventListener("storagecommit", myStorageCommitCallback, true);
+
+      if (window.localStorage) {
         localStorage.setItem("myKey", "some text value");
         var textData = localStorage.getItem("myKey");
         localStorage["myKey"] = "some text value";
@@ -24,16 +35,6 @@
         localStorage.clear();
       }
       
-      function myStorageCallback(e) {
-        alert("Key:" + e.key + " changed to "
-        + e.newValue);
-      }
-      window.addEventListener("storage", myStorageCallback, true);
-      
-      function myStorageCommitCallback(e) {
-        alert("Data written to disk");
-      }
-      window.addEventListener("storagecommit", myStorageCommitCallback, true);
       
 
     </script>

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html manifest="mycache.manifest">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Best Recipes</title>
+    <style>
+      #sidebar ul li a {
+        color: #900;
+        display: block;
+        padding: 3px 0;
+        text-decoration: none;
+      }
+
+      @media all and (max-width: 699px) and (min-width: 520px) {
+        #sidebar ul li a {
+          background: url(../images/email.png) left center no-repeat;
+          padding-left: 21px;
+        }
+      }
+
+      @media all and (max-width: 1000px) and (min-width: 700px) {
+        #sidebar ul li a:before {
+          color: #666;
+          content: "Email: ";
+          font-style: italic;
+        }
+      }
+
+      @media all and (min-width: 1001px) {
+        #sidebar ul li a:after {
+          color: #666;
+          content: " (" attr(data-email) ")";
+          font-size: 11px;
+          font-style: italic;
+        }
+      }
+
+      @media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+        #sidebar ul li a {
+          background: url(../images/email.png) left center no-repeat;
+          padding-left: 21px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="sidebar">
+      <ul id="nav">
+        <li><a data-email="chriscoyier@gmail.com" href="mailto:chriscoyier@gmail.com">Chris Coyier</a></li>
+        <li><a data-email="isuredo@likeher.com" href="mailto:isuredo@likeher.com">Elisabeth Moss</a></li>
+        <li><a data-email="marry@me.com" href="mailto:marry@me.com">Amanda Righetti</a></li>
+      </ul>      
+    </div>
+
+
+  </body>
+
+</html>
