@@ -12,6 +12,11 @@ em {
     font-style: italic;
 }
 
+article {
+    background-color: yellow; /* Yellow is a good highlight color */
+    font-style: italic;
+}
+
 /*element selector*/
 h2 { font-size: 24px; }
 
@@ -45,4 +50,12 @@ font-weight: bold;
  
 .no-rgba div {
     /* Do things with CSS for browsers that DO NOT support RGBa colors */
+}
+
+.astyle {
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
 }

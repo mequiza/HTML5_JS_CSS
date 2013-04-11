@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <title>Contact Us</title>
     <link href="0105_style.css" rel="stylesheet" />
-    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script src="../../Scripts/jquery-1.9.1.min.js"></script>
     <script src="modernizr.custom.81885.js"></script>
   </head>
   <body>
@@ -15,6 +15,10 @@
       Somewhere<br />
       Over There<br />
       <em>USA</em></p>
+    <article>
+      yadayadayada
+
+    </article>
     <p>
       <a href="mailto:contact@contoso.com">
         contact@contoso.com</a>
@@ -67,8 +71,8 @@
       //using modernizr prefixes
       $('#myElement').click(function () {
         var transform = 'scale(2)';
-        this.style.transform = transform;
-//            this.style[Modernizr.prefixed('transform')] = transform;
+        //this.style.transform = transform;
+        this.style[Modernizr.prefixed('transform')] = transform;
       });
           
       //testing for features
@@ -77,7 +81,7 @@
       } else {
         // Do things with JS for browsers that DO NOT support RGBa colors
       }
-      
+            
       //conditionally loading resources
       Modernizr.load({
         test: Modernizr.indexeddb,
