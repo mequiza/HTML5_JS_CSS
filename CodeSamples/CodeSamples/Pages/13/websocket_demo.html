@@ -50,7 +50,31 @@
       <ul id="log"></ul>
     </article>
     <script>
-  // let's invite Firefox to the party.
+      var addEvent = (function () {
+        if (document.addEventListener) {
+          return function (el, type, fn) {
+            if (el && el.nodeName || el === window) {
+              el.addEventListener(type, fn, false);
+            } else if (el && el.length) {
+              for (var i = 0; i < el.length; i++) {
+                addEvent(el[i], type, fn);
+              }
+            }
+          };
+        } else {
+          return function (el, type, fn) {
+            if (el && el.nodeName || el === window) {
+              el.attachEvent('on' + type, function () { return fn.call(el, window.event); });
+            } else if (el && el.length) {
+              for (var i = 0; i < el.length; i++) {
+                addEvent(el[i], type, fn);
+              }
+            }
+          };
+        }
+      })();
+      
+      // let's invite Firefox to the party.
       if (window.MozWebSocket) {
         window.WebSocket = window.MozWebSocket;
       }
@@ -106,18 +130,18 @@
           }
         };
 
-        form.submit = function(event) {
+        addEvent(form, "submit", function(event) {
           event.preventDefault();
 
           // if we're connected
           if (conn.readyState === 1) {
             conn.send(JSON.stringify(chat.value));
-            log.innerHTML = '<li class="you">' + chat.value.replace(/[<>&]/g, function(m) { return entities[m]; }) + '</li>' + log.innerHTML;
+            log.innerHTML = '<li class="you">' + chat.value.replace(/[<>&]/g, function (m) { return entities[m]; }) + '</li>' + log.innerHTML;
 
             chat.value = '';
           }
-        };
-
+        });
+        
         openConnection();
       }
 
