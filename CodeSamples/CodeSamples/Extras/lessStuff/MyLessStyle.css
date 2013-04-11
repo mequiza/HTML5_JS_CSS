@@ -1,0 +1,43 @@
+﻿.shape {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: #ffdde8;
+  margin: 20px;
+  border: 20px solid #bbbbbb;
+}
+.shape:hover {
+  background: #ffdddd;
+}
+.Transition {
+  -moz-transition: -moz-transform 2s;
+  -o-transition: -o-transform 2s;
+  -webkit-transition: -webkit-transform 2s;
+  transition: transform 2s;
+}
+#shape1 {
+  -moz-transition: -moz-transform 2s;
+  -o-transition: -o-transform 2s;
+  -webkit-transition: -webkit-transform 2s;
+  transition: transform 2s;
+}
+#shape1:hover {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+#shape2 {
+  -moz-transition: -moz-transform 2s;
+  -o-transition: -o-transform 2s;
+  -webkit-transition: -webkit-transform 2s;
+  transition: transform 2s;
+}
+#shape2:hover {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}

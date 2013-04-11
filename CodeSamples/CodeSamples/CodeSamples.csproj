@@ -75,6 +75,14 @@
     <Content Include="Extras\bootstrapStuff\index.html" />
     <Content Include="Extras\bootstrapStuff\js\bootstrap.min.js" />
     <Content Include="Extras\bootstrapStuff\js\jquery.min.js" />
+    <Content Include="Extras\lessStuff\myLess.html" />
+    <Content Include="Extras\lessStuff\less.js" />
+    <Content Include="Extras\lessStuff\MyLessStyle.css">
+      <DependentUpon>MyLessStyle.less</DependentUpon>
+    </Content>
+    <Content Include="Extras\lessStuff\MyLessStyle.min.css">
+      <DependentUpon>MyLessStyle.less</DependentUpon>
+    </Content>
     <Content Include="Extras\ModernizrStuff\0105_style.css" />
     <Content Include="Extras\ModernizrStuff\logo-150x150.png" />
     <Content Include="Extras\ModernizrStuff\modernizr.custom.81885.js" />
@@ -157,6 +165,7 @@
     <Content Include="Scripts\0301_script.js" />
     <Content Include="packages.config" />
     <Content Include="Pages\09\mycache.manifest" />
+    <Content Include="Extras\lessStuff\MyLessStyle.less" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\0306_JQuery_intellisense.js" />
     <Content Include="Scripts\0501_script.js" />

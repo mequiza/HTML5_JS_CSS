@@ -1,0 +1,54 @@
+﻿@lightblue: #ddf;
+@lightred: #fdd;
+@lightgreen: #dfd;
+
+@defaulttheme: spin(@lightblue, 100);
+@borderColor: darken(desaturate(@defaulttheme, 100%), 20%);
+
+@defaultShapesWidth: 200px;
+@borderSize: @defaultShapesWidth * 0.1;
+
+.shape{
+    display:inline-block;
+    width:200px;
+    height:200px;
+    background:@defaulttheme;
+    margin:20px;
+    border: @borderSize solid @borderColor;
+    &:hover{
+        background: @lightred
+    }
+}
+
+.Transition{
+    -moz-transition: -moz-transform 2s;
+    -o-transition: -o-transform 2s;
+    -webkit-transition: -webkit-transform 2s;
+    transition: transform 2s;
+}
+
+@defaultdegrees: 90deg;
+
+.Transform(@degrees:@defaultdegrees){
+    -moz-transform: rotate(@degrees);
+    -ms-transform: rotate(@degrees);
+    -o-transform: rotate(@degrees);
+    -webkit-transform: rotate(@degrees);
+    transform: rotate(@degrees);
+}
+
+#shape1 {
+    .Transition;
+}
+
+#shape1:hover {
+    .Transform;
+}
+
+#shape2{
+    .Transition;
+}
+
+#shape2:hover{
+    .Transform(180deg);
+}

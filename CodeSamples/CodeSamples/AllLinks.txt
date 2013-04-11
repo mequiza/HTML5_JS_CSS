@@ -22,3 +22,4 @@ zurb in MVC: https://www.simple-talk.com/dotnet/asp.net/responsive-design-using-
 http://html5boilerplate.com/mobile/
 http://www.html5rocks.com/en/tutorials/
 http://mediaqueri.es/
+http://visualstudiogallery.msdn.microsoft.com/07d54d12-7133-4e15-becb-6f451ea3bea6
