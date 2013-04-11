@@ -93,3 +93,50 @@ do it server side!
 (   )False
 (   )True
 
+23. What are the primary differences between data retained on a user's device by using session storage and by using local storage?
+
+24. You configure a web page to use the application cache to cache a resource locally. If the resource is modified at the web server, then the browser automatically downloads the latest version. True or false?
+(   )False
+(   )True
+
+25. What are the main device characteristics used by media queries to detect whether a client device is a hand-held tablet?
+
+26. How can you style content to adapt to the type and form factor of the device on which a user is viewing your web site?
+
+27. Which of the following statements about SVG is false?
+(   )Option 1: You can use SVG to draw complex shapes, and fill them with gradients and patterns.
+(   )Option 2: SVG elements are parsed by the browser when the page is first loaded, and they are then discarded from memory.
+(   )Option 3: You can create SVG elements dynamically by using DOM functions such as document.createElement().
+(   )Option 4: You can handle events on SVG elements.
+(   )Option 5: SVG elements must be enclosed in an <svg> container element on a web page.
+
+28. When might you consider using the Canvas API instead of using SVG?
+
+29. What happens if you do not set the transition-duration property of a CSS transition?
+
+30. Which of the following operations can you NOT perform by using a CSS transformation?
+(   )Option 1: Rotate
+(   )Option 2: Translate
+(   )Option 3: Animate
+(   )Option 4: Scale
+(   )Option 5: Skew
+
+31. What are the steps for implementing a keyframe animation?
+
+32. Web socket clients send and receive data over an HTTP connection. True or False?
+(   )False
+(   )True
+
+33. How does a client create a connection to a web socket server?
+(   )Option 1: The client uses the open() function of the WebSocket object and specifies the URL of the server.
+(   )Option 2: The client uses the connect() function of the WebSocket object and specifies the URL of the server.
+(   )Option 3: Web sockets use a stateless protocol similar to HTTP. A client application simply specifies the address of the server as a parameter of the send() function of the WebSocket object. A connection is automatically established while the message is sent and then closed.
+(   )Option 4: The client creates a new WebSocket object and specifies the URL of the server.
+(   )Option 5: The client has to wait until the server responds to send a message that grants it permission to connect.
+
+34. Shared web workers can share data in the DOM of a web page, but dedicated web workers cannot. True or false?
+(   )False
+(   )True
+
+35. How does a web page communicate with a web worker?
+
